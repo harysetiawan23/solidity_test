@@ -7,15 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "lite-server",
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
   "dependencies": {
+     "lite-server": "^2.3.0",
     "dotenv": "^8.1.0",
     "truffle-hdwallet-provider": "^1.0.16"
   }

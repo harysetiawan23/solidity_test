@@ -14,7 +14,7 @@ contract adoption {
    return petId;
  }
 
-  function getAdopter(uint petId) public returns(address){
+  function getAdopter(uint petId) public view returns(address){
     return adopters[petId];
   }
 
