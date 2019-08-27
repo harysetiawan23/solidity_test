@@ -10,9 +10,13 @@ module.exports = {
       port: 7545,
       network_id: "*" // Match any network id
     },
-    rinkeby:{
-      provider:()=>new HDWalletProvider(process.env.MNEMONIC,"https://rinkeby.infura.io/v3/"+process.env.INFURA_PROJECT_SECRET),
-      network_id:4
-    }
+    rinkeby: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC,"https://rinkeby.infura.io/v3/"+process.env.INFURA_PROJECT_SECRET);
+      },
+      network_id: 4,
+      gasPrice: 20000000000,
+      gas: 3716887
+    },
   }
 };
