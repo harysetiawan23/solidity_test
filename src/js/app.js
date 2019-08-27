@@ -77,6 +77,7 @@ App = {
       }
 
       App.contracts.adoption.deployed().then((instance)=>{
+        console.log(account[0]);
         return instance.adopt(petId,account[0])
       }).then((result)=>{
         return App.markAdopted()
